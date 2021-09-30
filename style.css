@@ -1,0 +1,30 @@
+.header{
+    background-color: black;
+    width: auto;
+    height: 100px;
+}
+.headtxt{
+    text-align: center;
+    padding-top: 5px;
+    width: auto;
+}
+.main{
+    margin:auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 1200px;
+    height: 550px;
+    background-color: fcf6f0;
+}
+.leftcolumn{
+
+}
+.rightcolumn{
+    
+}
+#head{
+        color:white;
+}
+#mainheader{
+    text-align: center;
+}
