@@ -17,14 +17,25 @@
     background-color: fcf6f0;
 }
 .leftcolumn{
+    margin-left: 100px; 
 
 }
 .rightcolumn{
-    
+    margin-left: 100px;
 }
 #head{
         color:white;
 }
 #mainheader{
     text-align: center;
+}
+#calcbutton{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: rgb(138, 216, 180);
+}
+.inputs{
+    width: 300px;
+    height: 65px;
 }
