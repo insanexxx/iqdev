@@ -1,9 +1,7 @@
 <?php
-$startDate = $_POST["startDate"];
-$sum = $_POST["sum"];
-$term = $_POST["term"];
-$percent = $_POST["percent"];
-$sumAdd = $_POST["sumAdd"];
-
-echo "Ваше имя: <b>".$name . " " . $surname . "</b>";
+$q = $_POST['message'];
+$answer = array(
+    'answer' => 'Принят запрос'.$q
+);
+echo json_encode($answer);
 ?>

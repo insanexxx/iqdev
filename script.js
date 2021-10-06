@@ -1,3 +1,14 @@
+function Send(){
+    jQuery.ajax({
+        dataType: "json",   
+        type: "POST",
+        url: "localhost/iqdev",
+        data: {message: jQuery('#mainform').val()
+    }
+    }).done(function(msg){
+        jQuery('.result').text(msg['answer']);
+    })
+}
 $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
 	prevText: 'Предыдущий',

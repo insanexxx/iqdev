@@ -21,13 +21,13 @@
 <div class="main">
     <h1 id="mainheader">Депозитный калькулятор</h1>
     <h2 id="mainheader">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по определенному тарифу.</h2>
-    <form id="mainform" method="POST" action="calc.php">
+    <form id="mainform" onsubmit="Send()" method="POST" >
         <table>
             <tr>
                 <td><div class="leftcolumn">
                     <p><input class="inputs" id="datepicker" type="date" placeholder="Дата открытия" name="startDate"/></p>
                     <p><input class="inputs" type="text" placeholder="Сумма вклада" name="sum"/></p>
-                    <p><input type="checkbox" checked/>Ежемесячное пополнение вклада</p>
+                    <p><input id="check" type="checkbox" checked/>Ежемесячное пополнение вклада</p>
                 </div></td>
                 <td><div class="rightcolumn">
                     <p><input class="inputs" type="text" placeholder="Срок вклада" name="term"/></p>
@@ -36,10 +36,10 @@
                 </div></td>
             </tr>
         </table> 
-        <input id="calcbutton" type="submit" value="Рассчитать"/>    
+        <p><input id="calcbutton" type="submit" value="Рассчитать"/></p>    
         
-        <div class="result" hidden>_____________________________________________
-            <textbox></textbox>
+        <div id="result">_____________________________________________
+            
         </div>
     </form>
 </div>    
